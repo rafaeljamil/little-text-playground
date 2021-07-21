@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./res/style/bootstrap.css">
+    <link rel="stylesheet" href="./res/style/style.css">
+    <script defer src="./res/script/bootstrap.js"></script>
+    <script defer src="./res/script/jquery-3.6.0.js"></script>
+    <script defer src="./res/script/app.js"></script>
+    <title>Words-tools</title>
+</head>
+<body style="background-color:#2f2f2f;">
+    <div id="teste" class="">
+        <h1 class="text-center text-white my-4">Little Text Playground</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="text-center text-white my-4"><h2>How it works:</h2></div>
+                <div>
+                    <p class="text-center text-white">Type or paste some text in the first text area.</p>
+                    <p class="text-center text-white">Choose an option according to what you want to happen to your text.</p>
+                    <p class="text-center text-white">Hit "Transform".</p>
+                    <p class="text-center text-white">Now simply copy the resulting text and paste it wherever you want.</p>
+                    <p class="text-center text-white">Have fun!</p>
+                </div>
+                <div>
+                    <p class="text-center text-white">Options available:</p>
+                    <ul class="text-white">
+                        <li >lowercase - changes the whole text to lowercase</li>
+                        <li >UPPERCASE - changes the whole text to uppercase</li>
+                        <li >Random - scramble the word placement of a given phrase (does not work with single words)</li>
+                        <li >EndeS EsseS - add "s" or "es" to the end of each given word</li>
+                        <li >CaMeLcAsE - applies lowercase and uppercase for every other letter</li>
+                        <li >S p a c e d - adds spaces between every character</li>
+                        <li >Mirror - inverts the text order, from last to first</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col" id="form">
+                <form class="form-group" action="" method="post">
+                    <textarea class="form-control my-2" name="input" id="input" cols="30" rows="5" placeholder="Type or paste your text"></textarea>
+                    <label class="text-white" for="options">Choose an option</label>
+                    <select class="form-control" name="options" id="options">
+                        <option value="min">lowercase</option>
+                        <option value="mai">UPPERCASE</option>
+                        <option value="ran">Random (phrases)</option>
+                        <option value="ess">EndeS EsseS</option>
+                        <option value="cam">CaMeLcAsE</option>
+                        <option value="esp">S p a c e d</option>
+                        <option value="mir">Mirror - rorriM</option>
+                    </select>
+                    <div>
+                        <button class="btn btn-outline-light my-2" type="submit">Transform</button>
+                    </div>
+                </form>
+                <div>
+                    <textarea class="form-control my-2" name="resp" id="resposta" cols="30" rows="5" placeholder="Result"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
