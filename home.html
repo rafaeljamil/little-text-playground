@@ -4,60 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./res/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./res/style/bootstrap.css">
     <link rel="stylesheet" href="./res/style/style.css">
     <script defer src="./res/script/bootstrap.js"></script>
     <script defer src="./res/script/jquery-3.6.0.js"></script>
     <script defer src="./res/script/app.js"></script>
-    <title>Words-tools</title>
+    <title>Text Tools</title>
 </head>
 <body style="background-color:#2f2f2f;">
     <div id="teste" class="">
-        <h1 class="text-center text-white my-4">Little Text Playground</h1>
+        <h1 class="text-center text-white my-4">Text Tools</h1>
     </div>
     <div class="container">
         <div class="d-flex flex-row flex-wrap">
-            <div class="">
-                <div class="text-center text-white my-4"><h2>How it works:</h2></div>
+            <div class="px-4">
+                <div class="text-center text-white"><h2>Como funciona:</h2></div>
                 <div>
-                    <p class="text-center text-white">Type or paste some text in the first text area.</p>
-                    <p class="text-center text-white">Choose an option according to what you want to happen to your text.</p>
-                    <p class="text-center text-white">Hit "Transform".</p>
-                    <p class="text-center text-white">Now simply copy the resulting text and paste it wherever you want.</p>
-                    <p class="text-center text-white">Have fun!</p>
+                    <p class="text-center text-white my-0">Escreva ou cole algum texto no primeiro espaço.</p>
+                    <p class="text-center text-white my-0">Escolha uma opção para modificar o texto.</p>
+                    <p class="text-center text-white my-0">Aperte em "Transformar".</p>
+                    <p class="text-center text-white my-0">Copie o resultado para onde você quiser</p>
+                    <p class="text-center text-white mb-4">Divirta-se!</p>
                 </div>
                 <div>
-                    <p class="text-center text-white">Options available:</p>
+                    <p class="text-center text-white my-2">Opções disponíveis:</p>
                     <ul class="text-white">
-                        <li >lowercase - changes the whole text to lowercase</li>
-                        <li >UPPERCASE - changes the whole text to uppercase</li>
-                        <li >Random - scramble the word placement of a given phrase (does not work with single words)</li>
-                        <li >EndeS EsseS - add "s" or "es" to the end of each given word</li>
-                        <li >CaMeLcAsE - applies lowercase and uppercase for every other letter</li>
-                        <li >S p a c e d - adds spaces between every character</li>
-                        <li >Mirror - inverts the text order, from last to first</li>
+                        <li >minusculas - deixa o texto todo minúsculo</li>
+                        <li >MAIÚSCULA - deixa o texto todo maiúsculo</li>
+                        <li >Aleatório - embaralha as palavras de uma frase (não funciona com palavras sozinhas)</li>
+                        <li >EsseS noS FinS - adiciona "s" ou "es" no fim de cada palavra</li>
+                        <li >CaMeLcAsE - alterna entre letras maiúsculas e minúsculas</li>
+                        <li >E s p a ç o - adiciona espaços entre cada letra</li>
+                        <li >Espelho - inverte a ordem do texto, da última para a primeira letra</li>
                       </ul>
                 </div>
             </div>
-            <div class="col" id="form">
+            <div class="col px-4" id="form">
                 <form class="form-group" action="" method="post">
-                    <textarea class="form-control my-2" name="input" id="input" cols="30" rows="5" placeholder="Type or paste your text"></textarea>
-                    <label class="text-white" for="options">Choose an option</label>
+                    <textarea class="form-control my-2" name="input" id="input" cols="30" rows="5" placeholder="Escreva ou cole seu texto"></textarea>
+                    <label class="text-white" for="options">Escolha uma opção</label>
                     <select class="form-control" name="options" id="options">
-                        <option value="min">lowercase</option>
-                        <option value="mai">UPPERCASE</option>
-                        <option value="ran">Random (phrases)</option>
-                        <option value="ess">EndeS EsseS</option>
+                        <option value="min">minusculas</option>
+                        <option value="mai">MAIÚSCULA</option>
+                        <option value="ran">Aleatório (frases)</option>
+                        <option value="ess">EsseS noS FinS</option>
                         <option value="cam">CaMeLcAsE</option>
-                        <option value="esp">S p a c e d</option>
-                        <option value="mir">Mirror - rorriM</option>
+                        <option value="esp">E s p a ç o</option>
+                        <option value="mir">Espelho - ohlepsE</option>
                     </select>
                     <div>
-                        <button class="btn btn-outline-light my-2" type="submit">Transform</button>
+                        <button class="btn btn-outline-light my-2" type="submit">Transformar</button>
                     </div>
                 </form>
                 <div>
-                    <textarea class="form-control my-2" name="resp" id="resposta" cols="30" rows="5" placeholder="Result"></textarea>
+                    <textarea class="form-control my-2" name="resp" id="resposta" cols="30" rows="5" placeholder="Resultado"></textarea>
                 </div>
             </div>
         </div>
